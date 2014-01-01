@@ -1,0 +1,43 @@
+{
+	"name":"contao-community-alliance/events-cron",
+	"description":"Cron event for Contao Open Source CMS",
+	"keywords":["contao", "event", "cron"],
+	"type": "contao-module",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Tristan Lins",
+			"email":"tristan.lins@bit3.de",
+			"homepage":"http://bit3.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"info@contao-community-alliance.de",
+		"issues":"https://github.com/contao-community-alliance/events-cron/issues",
+		"wiki":"https://github.com/contao-community-alliance/events-cron/wiki",
+		"irc":"irc://irc.freenode.org/contao.dev",
+		"source":"https://github.com/contao-community-alliance/events-cron"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core": ">=2.11,<3.3",
+		"contao-community-alliance/event-dispatcher": "~1.0"
+	},
+	"autoload":{
+		"psr-0":{
+			"ContaoCommunityAlliance\\Contao\\Events\\Cron": "src/"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"contao": "system/modules/events-cron"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "1.0.x-dev",
+			"dev-develop": "1.1.x-dev"
+		}
+	}
+}
