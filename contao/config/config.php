@@ -14,22 +14,22 @@
  */
 
 $GLOBALS['TL_CRON']['monthly'][]  = array(
-	'ContaoCommunityAlliance\Contao\EventDispatcher\Cron\CronDispatcher',
+	'ContaoCommunityAlliance\Contao\Cron\CronDispatcher',
 	'monthly'
 );
 $GLOBALS['TL_CRON']['weekly'][]   = array(
-	'ContaoCommunityAlliance\Contao\EventDispatcher\Cron\CronDispatcher',
+	'ContaoCommunityAlliance\Contao\Cron\CronDispatcher',
 	'weekly'
 );
 $GLOBALS['TL_CRON']['daily'][]    = array(
-	'ContaoCommunityAlliance\Contao\EventDispatcher\Cron\CronDispatcher',
+	'ContaoCommunityAlliance\Contao\Cron\CronDispatcher',
 	'daily'
 );
 $GLOBALS['TL_CRON']['hourly'][]   = array(
-	'ContaoCommunityAlliance\Contao\EventDispatcher\Cron\CronDispatcher',
+	'ContaoCommunityAlliance\Contao\Cron\CronDispatcher',
 	'hourly'
 );
 $GLOBALS['TL_CRON']['minutely'][] = array(
-	'ContaoCommunityAlliance\Contao\EventDispatcher\Cron\CronDispatcher',
+	'ContaoCommunityAlliance\Contao\Cron\CronDispatcher',
 	'minutely'
 );
