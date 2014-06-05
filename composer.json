@@ -21,7 +21,8 @@
 	},
 	"require":{
 		"php":">=5.3",
-		"contao/core": ">=2.11,<3.3",
+		"contao/core": ">=2.11,<3.4-dev",
+		"contao-community-alliance/composer-plugin": "~2.0",
 		"contao-community-alliance/event-dispatcher": "~1.0"
 	},
 	"autoload":{

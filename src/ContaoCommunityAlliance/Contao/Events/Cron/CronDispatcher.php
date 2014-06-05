@@ -28,7 +28,7 @@ class CronDispatcher
 	public function monthly()
 	{
 		$eventDispatcher = $this->getEventDispatcher();
-		$eventDispatcher->dispatch('cron.monthly', new CronEvent('monthly'));
+		$eventDispatcher->dispatch(CronEvents::MONTHLY, new CronEvent('monthly'));
 	}
 
 	/**
@@ -37,7 +37,7 @@ class CronDispatcher
 	public function weekly()
 	{
 		$eventDispatcher = $this->getEventDispatcher();
-		$eventDispatcher->dispatch('cron.weekly', new CronEvent('weekly'));
+		$eventDispatcher->dispatch(CronEvents::WEEKLY, new CronEvent('weekly'));
 	}
 
 	/**
@@ -46,7 +46,7 @@ class CronDispatcher
 	public function daily()
 	{
 		$eventDispatcher = $this->getEventDispatcher();
-		$eventDispatcher->dispatch('cron.daily', new CronEvent('daily'));
+		$eventDispatcher->dispatch(CronEvents::DAILY, new CronEvent('daily'));
 	}
 
 	/**
@@ -55,7 +55,7 @@ class CronDispatcher
 	public function hourly()
 	{
 		$eventDispatcher = $this->getEventDispatcher();
-		$eventDispatcher->dispatch('cron.hourly', new CronEvent('hourly'));
+		$eventDispatcher->dispatch(CronEvents::HOURLY, new CronEvent('hourly'));
 	}
 
 	/**
@@ -64,7 +64,7 @@ class CronDispatcher
 	public function minutely()
 	{
 		$eventDispatcher = $this->getEventDispatcher();
-		$eventDispatcher->dispatch('cron.minutely', new CronEvent('minutely'));
+		$eventDispatcher->dispatch(CronEvents::MINUTELY, new CronEvent('minutely'));
 	}
 
 	/**
